@@ -1,0 +1,14 @@
+BAJAR LOS CAMBIOS DE LA RAMA MAIN
+git pull origin main (para bajar los cambios nuevos en la rama master)
+
+CAMBIAR DE RAMA 
+git checkout rama
+
+
+SUBIR TUS CAMBIOS
+git add . (agrega encabezado a los archivos cambiados)
+git commit -m "Mensaje con los cambios" (crea el commit con la PEQUEÑA descripción de los cambios en el Mensaje)
+git push origin rama (sube (pushea) los cambios desde el local a la rama)
+
+Ir a github y pedir el pull request y colocar a gabo de reviwer
+
