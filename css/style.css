@@ -1,0 +1,872 @@
+/*-----.Caracteristicas generales.-----*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/*-----.Estilos del top header.-----*/
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #f6f7f7;
+    height: 51px;
+    font-size: 14px;
+    padding: auto 5px;
+    border-bottom: 0.5px solid rgba(60,60,60, .20);
+}
+
+/*-----.Nav del top header.-----*/
+
+.top-header nav {
+    width: 250px;    
+}
+
+.top-header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.top-header nav ul li a {
+    color: #555555;
+    text-decoration: none;
+    padding: auto auto 5px 5px;
+}
+
+.top-header nav ul li a:hover {
+    color: #27b399;
+}
+
+.top-header nav ul .menu::after {
+    content: '|';
+    margin-left: 14px;
+    color: #cfd3d7;
+}
+
+.top-header p {
+    color: #797979;
+}
+
+.top-header p span {
+    color: #000;
+}
+
+/*=====-----Redes del top header-----=====*/
+
+.redes a {
+    color: #555555;
+    font-size: 19px
+}
+
+.redes a:hover {
+    color: #27b399;
+}
+
+/*=====-----Menu principal-----=====*/
+
+.headerMain {
+    width: 93.65%;
+    height: 114px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: sticky; 
+    top: 0;
+}
+
+/*=====-----Logotipo del menu-----=====*/
+
+.headerMain img {
+    width: 160px;
+}
+
+/*=====-----lista de la barra de navegacion-----=====*/
+
+.headerMain nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.headerMain nav ul li {
+    margin: auto 15px;
+    font-size: 13px;
+}
+
+.headerMain nav ul li a {
+    color: #4f4f4f;
+    font-weight: bold;
+}
+
+.headerMain nav ul li a:hover{
+    color: #27b399;
+}
+
+/*=====-----Contenedor del menu pegajoso-----=====*/
+
+.contenedorH {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 0 0 solid #000;
+}
+
+/*=====-----Informacion principal y primer articulo-----=====*/
+
+/*=====-----Fondo y aspectos generales del primer articulo-----=====*/
+
+.pPrincipal .info {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    height: 635px;
+    background: linear-gradient(rgba(50,65,85,.75)0%, rgba(50,65,85,.75)90%), url(../assets/img/cropped-IMG_7015-scaled-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*=====-----Texto del articulo-----=====*/
+
+.info h2 {  
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.info p {
+    margin: 1em 5em;
+    line-height: 25px;
+}
+
+/*=====-----Boton principal verde-----=====*/
+
+.botones {
+    margin-top: 1.5em;
+}
+
+.info .boton{
+	background: #27b399;
+	border:0 solid;
+	border-radius: 0.31em;
+    font-size: 16px;
+    font-weight: 600;
+	padding: 14px 28px;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+    transition: .1s ease all; 
+}
+
+.info .boton:hover {
+    background-color: #37c4aa;
+}
+
+/*=====-----Boton secundario-----=====*/
+
+.info .boton1 {
+    background: none;
+	border:2px solid #fff;
+	border-radius: 0.31em;
+    font-size: 16px;
+    font-weight: 600;
+	padding: 12px 46px;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+    transition: .1s ease all;
+}
+
+.info .boton1:hover {
+    background-color: #27b399;
+    border:2px solid #37c4aa;
+}
+
+/*=====-----Segundo articulo-Altar Familiar-----=====*/
+
+/*=====-----Posicionanamiento y aspectos generales del articulo-----=====*/
+
+.aF{
+    font-size: 17.5px;
+    color: #555;
+    height: 350px;    
+    padding-top: 95px;
+    padding-left: 55px;
+    display: flex;
+    flex-direction: row;
+}
+    
+/*=====-----Texto y botones-----=====*/
+
+.PaF{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+
+}
+
+.PaF p {
+    line-height: 25px;
+}
+
+.aF .boton{
+    background: #27b399;
+    border:0 solid;
+    border-radius: 0.31em;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 18px 24px;
+    color: #fff;
+    margin-right: 1.25em;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .1s ease all; 
+}
+
+.aF .boton:hover {
+    background-color: #37c4aa;
+}
+
+/*=====-----Imagen del articulo-----=====*/
+
+.aF img {
+    width: 400px;
+    margin-right: 150px; 
+    margin-left: 115px;
+}
+
+/*=====-----Tercer articulo-Predicas-----=====*/
+
+/*=====-----Aspecto general y posicionamiento-----=====*/
+
+.aP {
+    font-size: 17.5px;
+    color: #555;
+    background-color: #f6f7f7; 
+    height: 320px;    
+    padding-top: 95px;
+    padding-right: 85px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*=====-----Texto del articulo-----=====*/
+
+.aPP {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 33px;
+    margin-left: 0px;
+}
+
+/*=====-----Boton-----=====*/
+
+.aP .boton{
+    background: #27b399;
+    border:0 solid;
+    border-radius: 0.31em;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 18px 24px;
+    color: #fff;
+    margin-right: 1.25em;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .1s ease all; 
+}
+
+.aP .boton:hover {
+    background-color: #37c4aa;
+}
+
+/*=====-----Imagen del articulo-----=====*/
+
+.aP img {
+    width: 400px;
+    margin-right: 120px; 
+    margin-left: 10px;
+}
+
+/*=====-----Cuarto articulo-Our portfolio(?-----=====*/
+
+.oP {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.oPtt {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    color: #555;
+    line-height: 10px;
+    margin-top: 60px;
+}
+
+.oPtt h2 {
+    font-size: 32px;
+}
+
+/*=====-----imgs de our portfolio-----=====*/
+
+.oPip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.oPip img {
+    margin-top: 30px; 
+}
+
+/*=====-----Boton gris y trasparente-----=====*/
+
+.oP .boton {
+    background: none;
+    border:2px solid #9fa4a9;
+    border-radius: 0.31em;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 20px;
+    color: #9fa4a9;
+    margin-right: 1.25em;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.oP .boton:hover {
+    background: #27b399;
+    border: 2px solid #27b399;
+    color: #fff;
+}
+
+/*=====-----Horarios y direccion-----=====*/
+
+.mInfo {
+    background-color: #27b399;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 235px; 
+    margin-top: 45px;
+}
+
+
+.mInfo .ccN {
+    margin-left: 70px;
+    margin-top: 55px;
+}
+
+.mInfo .boton {
+    background: none;
+    border:2px solid #fff;
+    border-radius: 0.31em;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 22px;
+    color: #fff;
+    margin-right: 1.25em;
+    margin-left: 130px;
+    margin-top: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition: .1s ease all;
+    font-size: 22px;
+    border-radius: 4px;
+}
+
+.mInfo .boton:hover {
+    background: #fff;
+    color: #27b399;
+}
+
+/*=====-----Equipo de trabajo-----=====*/
+
+/*=====-----*/
+
+.nEquipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.nEquipo h2 {
+    font-size: 30px;
+    color: #555;
+}
+
+.edTrabajo img {
+   width: 275px; 
+}
+
+.nEquipo .edTrabajo {
+    display: flex;
+    flex-direction: row;
+}
+
+/*=====-----Div de Alexander-----=====*/
+
+.ale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.ale a {
+    font-size: 20px;
+    color: #27b399;
+    margin-top: 30px;
+}
+
+.ale a:hover {
+    text-decoration: underline; 
+}
+
+.ale span {
+    font-size: 13px;
+    color: #9fa4a9;
+    margin-top: 8px;
+}
+
+/*=====-----Neptali-----=====*/
+
+.neptali {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.neptali a {
+    font-size: 20px;
+    color: #27b399;
+    margin-top: 30px;
+}
+
+.neptali a:hover {
+    text-decoration: underline; 
+}
+
+.neptali span {
+    font-size: 13px;
+    color: #9fa4a9;
+    margin-top: 8px;
+}
+
+/*=====-----Invitacion a conocer a Dios-----=====*/
+
+.subscripcion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 350px;
+    color: #fff;
+    background-color: #324155bf;
+    margin-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.subscripcion h2 {
+    font-size: 36px;
+    margin-top: 70px;
+}
+
+.subscripcion p {
+    font-size: 17px;
+}
+
+/*=====-----Angora el formulario-----=====*/
+
+.formulario {
+    margin-top: 30px;
+}
+
+.formulario input {
+    width: 350px;
+    padding: 15.5px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+
+/*=====-----Ahora el botoncirou-----=====*/
+
+.formulario .boton{
+    background: #27b399;
+    border:0 solid;
+    border-radius: 0.31em;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 18px 35px 15px 35px;
+    color: #fff;
+    margin-left: 30px;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .1s ease all; 
+}
+
+.formulario .boton:hover {
+    background-color: #37c4aa;
+}
+
+/*=====-----Ultimos articulos subidos-----=====*/
+
+/*=====-----Primero el boton-----=====*/
+
+.ulArticulos .boton {
+    background: none;
+    border:2px solid #9fa4a9;
+    border-radius: 0.31em;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 20px;
+    color: #9fa4a9;
+    margin-right: 1.25em;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.ulArticulos .boton:hover {
+    background: #27b399;
+    border: 2px solid #27b399;
+    color: #fff;
+}
+
+/*=====-----Titulo e informacion-----=====*/
+
+.ulArticulos h2 {
+    font-size: 32px;
+    color: #555;
+}
+
+.ulArticulos p {
+    font-size: 17px;
+    color: #555;
+}
+
+/*=====-----img del articulo-----=====*/
+
+.imgA {
+    width: 258px;
+    height: 258px;
+    background-color: #27b399;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+/*=====-----Titulo del articulo-----=====*/
+
+.elementosA a {
+    color: #27b399;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.elementosA a:hover {
+    text-decoration: underline;
+}
+
+/*=====-----Texto del articulo-----=====*/
+
+.elementosA p {
+    font-size: 17px;
+}
+
+/*=====-----Colocando todo en su lugar-----=====*/
+
+.ulArticulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.text {
+    text-align: center;
+}
+
+.contenedorA {
+    padding-left: 130px;
+    width: 89%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+
+.archivos {
+    width: 20%;
+    text-align: justify;
+}
+
+.archivos .textA {
+    margin-top: 30px;
+    line-height: 22px;
+}
+
+.ulArticulos {
+    margin-top: 40px;
+}
+
+/*=====-----Opiniones-----=====*/
+
+.opiniones {
+    height: 650px;
+    width: 100%;
+    background-color: #324155bf;
+    padding-top: 30px;
+}
+
+.tiysub {
+    color: #fff;
+    text-align: center;
+}
+
+.tiysub h2 {
+    font-size: 36px;
+}
+
+.tiysub p {
+    font-size: 17px;
+}
+
+/*=====-----mensajes-----=====*/
+
+.contenedorO {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 25px;
+    margin-right: 25px;
+
+}
+
+.opinion {
+    background-color: #fff;
+    padding-top: 30px;
+    margin-top: 40px;
+    width: 350px;
+    height: 280px;
+    border-left: 10px solid #27b399;
+}
+
+.opinion p {
+    text-align: left;
+    margin-left: 90px;
+    margin-right: 25px;
+    font-size: 18px;
+    color: #797979;
+    line-height: 28px;
+}
+
+.usuario {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.infoUsuario {
+    margin-top: -15px;
+    margin-left: 15px;
+    line-height: 5px;
+}
+
+.infoUsuario h4 {
+    color: #27b399;
+    font-size: 19px;
+}
+
+.infoUsuario p {
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/*=====-----Formulario de contacto-----=====*/
+
+.message {
+    background-color: #324155bf;
+    height: 690px;
+    display: flex;
+}
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textF {
+    color: #fff;
+    line-height: 24px;
+}
+
+.textF h2 {
+    font-size: 36px;
+}
+
+.textF p {
+    font-size: 17px; 
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 60px; 
+}
+
+.contacto input {
+    width: 330px;
+    margin-right: 25px;
+    margin-top: 40px;
+    padding: 15.5px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.contacto textarea {
+    width: 91.8%;
+    height: 85%;
+    border-radius: 4px;
+    margin-top: 45px;
+    padding: 15.5px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.formularios .boton {
+    background: #27b399;
+    border:0 solid;
+    border-radius: 0.31em;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 25px 17px 25px;
+    color: #fff;
+    margin-left: 30px;
+    margin-right: 1.25em;
+    margin-top: 190px;
+    cursor: pointer;
+    transition: .1s ease all; 
+}
+
+.formularios .boton:hover {
+    background-color: #37c4aa;
+}
+
+
+/*=====-----Pie de pagina y asi-----=====*/
+
+footer {
+    background-color: #40454b;
+    height: 335px;
+    border-top: 3px solid #27b399;
+    bottom: 0;
+}
+
+.copirrai {
+    background-color: #34393f;
+    height: 80px;
+    margin-top: 113px;
+}
+
+
+footer .titulo {
+    color: #e8e8e8;
+    font-size: 18px;
+}
+
+footer ul {
+    line-height: 50px;
+    margin-top: 50px;
+}
+
+footer ul li {
+    color: #9fa4a9;
+    font-size: 17px;
+}
+
+.listas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: -50px;
+    margin-bottom: -45px;
+    margin-right: 100px;
+    font-weight: 600;
+}
+
+.copirrai {
+    color: #9fa4a9;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+.copirrai a {
+    color: #27b399;
+}
+
+/*=====-----Scroll-----=====*/
+
+.scroll {
+    position: relative;
+    margin-left: 45%;
+    margin-top: -50px;
+}
+
+.scroll .boton {
+    background: #27b399;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 15px;
+    color: #fff;
+    margin-right: 1.25em;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .1s ease all; 
+}
+
+.scroll .boton:hover {
+    background-color: #37c4aa;
+
+}
